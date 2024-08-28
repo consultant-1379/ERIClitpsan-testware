@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="tst_litp_create_delete_snapshots">
+    <test name="tst_litp_create_delete_snapshots">
+        <classes>
+            	<class name="com.ericsson.nms.litp.taf.test_cases.TestRunner2" />
+        </classes>
+    </test>
+</suite>

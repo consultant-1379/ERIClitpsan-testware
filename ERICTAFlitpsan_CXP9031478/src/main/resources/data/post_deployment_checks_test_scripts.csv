@@ -1,0 +1,9 @@
+test_id
+infra_tst_env_sanity_checks
+infra_tst_san_verify_lun_names
+infra_tst_san_verify_boot_lun_sizes
+infra_tst_san_verify_lun_uuids
+infra_tst_san_verify_lun_container
+infra_tst_san_verify_lun_sgs
+infra_tst_san_verify_host_reg_sg
+infra_tst_san_verify_nonboot_lun_sizes

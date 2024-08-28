@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="pdc_suite">
+    <test name="post_deployment_checks">
+        <classes>
+            	<class name="com.ericsson.nms.litp.taf.test_cases.TestRunner" />
+        </classes>
+    </test>
+
+</suite>

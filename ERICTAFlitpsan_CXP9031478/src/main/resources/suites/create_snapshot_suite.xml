@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="create_snapshot_suite">
+    <test name="infra_tst_snapshots_exist_on_san">
+        <classes>
+            	<class name="com.ericsson.nms.litp.taf.test_cases.create_snapshot_post_upgrade" />
+        </classes>
+    </test>
+
+</suite>

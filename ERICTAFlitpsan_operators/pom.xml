@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.ericsson.nms.litp.taf</groupId>
+		<artifactId>litpsan-testware</artifactId>
+		<version>1.6.19-SNAPSHOT</version>
+	</parent>
+	<artifactId>ERICTAFlitpsan_operators</artifactId>
+	<properties>
+	<infra_test_utils_version>RELEASE</infra_test_utils_version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.ericsson.cifwk</groupId>
+			<artifactId>all-taf-sdk</artifactId>
+			<type>pom</type>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.8</version>
+				<executions>
+					<execution>
+						<id>unpack-utils</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>com.ericsson.oss.itpf</groupId>
+									<artifactId>infra_test_utils-jar</artifactId>
+									<version>${infra_test_utils_version}</version>
+									<type>jar</type>
+									<overWrite>true</overWrite>
+									<outputDirectory>${project.build.directory}/infra_test_utils</outputDirectory>
+									<destFileName>infra_test_utils.jar</destFileName>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
